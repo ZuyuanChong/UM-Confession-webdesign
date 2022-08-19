@@ -1,5 +1,5 @@
 # Introduction
-This is just a rough UI design of the UM Confession webpage. The webpage is still incomplete so there is yet to have any backend for the website. 
+This is just a rough UI design of the UM Confession webpage. The webpage is incomplete as we did not finish the backend part. Hence, this is only a demonstration of the design for the webpages and the webpages don't have any functionalities in them.
 
 # Brief Explanation
 Since there is no backend for the website, we only use HTML, CSS and Javascript to complete the frontend of the website. The design is built on Laravel framework as we initially wanted to use php as its backend and MySQL as its database (the project is not completed).
