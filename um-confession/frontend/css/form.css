@@ -1,0 +1,227 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%
+}
+
+.sign-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content) 1fr;
+    row-gap: 1.5rem;
+}
+
+.nav-header-sign_up {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    box-shadow: 0 0 0.7rem rgba(0,0,0,0.3);
+    padding: 2rem 0;
+}
+
+.nav-header-sign_up ul {
+    display: flex;
+    width: 100rem;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.nav-header-sign_up .animate-charcter
+{
+    background: linear-gradient(-45deg, #eaf434, #e0a419, #e73c7e, #23a6d5, #23d5ab);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 10s ease infinite;
+    display: inline-block;
+    font-size: 20px;
+    font-style: italic;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.nav-header-sign_up ul li {
+    padding: 0 2.5rem;
+    position: relative;
+    list-style-type: none;
+}
+
+.nav-header-sign_up ul li:last-child {
+    margin-left: auto;
+}
+
+.nav-header-sign_up ul li::after {
+    content: "";
+    width: 100%;
+    height: 0.4rem;
+    background: #e73c7e;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    opacity: 0;
+}
+
+.nav-header-sign_up li:hover::after {
+    opacity: 1;
+}
+
+.nav-header-sign_up a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.nav-header-sign_up .active {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #e73c7e;
+}
+
+.nav-header-sign_up a:hover {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #e73c7e;
+}
+
+.nav-header-sign_up .fa-graduation-cap {
+    font-size: 2rem;
+    color: #e73c7e;
+}
+
+.form-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+    width: 100rem;
+    display: grid;
+    grid-template-columns: 10rem 8fr;
+    grid-template-rows: 1.5fr 100px;
+    row-gap: 10rem;
+}
+
+.form-content {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    padding: 5rem 0 1rem 0;
+}
+
+.header_form-content {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+form .form-group label {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+form input:not(.form-checkbox) {
+    width: 30rem;
+    display: block;
+    height: 3.5rem;
+    border: .1rem solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+form input:not(.form-checkbox):focus {
+    background-color: #d9ebf7;
+}
+
+.btn-form {
+    padding: 1rem 1.5rem;
+    background: #e73c7e;
+    color: #fff;
+    border-radius: 4rem;
+    border: 0.1rem solid #e73c7e;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    color: #fff;
+    background: #e06a97e6;
+    border: 0.1rem solid #e06a97e6;
+}
+
+.form-btn-wrapper label {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.form-footer {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background: #edf3f7;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.form-footer p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+.form-footer a {
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.s-password {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+span.errorMessage {
+    display: block;
+    font-size: 1.6rem;
+    color: red;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.table {
+    width: 90%;
+    font-size: medium;
+}
+
+.table button {
+    font-size: small;
+}
+
+.table a {
+    text-decoration: none;
+}

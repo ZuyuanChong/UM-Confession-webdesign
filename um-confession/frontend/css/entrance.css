@@ -1,0 +1,156 @@
+/***************************************************
+1. Universal styles (typography,etc)
+2. Main Section style
+3. Left Section
+4. Right Section
+5. Footer
+****************************************************/
+
+/* 1. Universazl styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%
+}
+
+/* 2. Main section */
+section.main-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    grid-template-rows: 1fr min-content;
+}
+
+/* 3. Left section */
+.left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #d1c51c);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.left-content div {
+    display: flex;
+    align-items: center;
+    margin: 4rem;
+    color: #fff;
+}
+
+.left-content i{
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.left-content-heading{
+    font-size: 2rem;
+}
+
+/* 4. Right section */
+.right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+}
+
+.middle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-content i {
+    font-size: 4rem;
+    color: #e73c7e;
+    margin-bottom: 2rem;
+}
+
+.animate-charcter
+{
+    background: linear-gradient(-45deg, #eaf434, #e0a419, #e73c7e, #23a6d5, #23d5ab);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 10s ease infinite;
+    display: inline-block;
+    font-size: 30px;
+    font-style: italic;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.middle-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+}
+
+.middle-content h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.middle-content a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.8rem 0;
+    padding: 0.9rem;
+    border: 0.1rem solid #e73c7e;
+    border-radius: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+a.login {
+    background: #e73c7e;
+    color: #fff;
+}
+
+a.login:hover {
+    transform: scale(1.15);
+}
+
+a.user {
+    background: #fff;
+    color: #e73c7e;
+}
+
+a.user:hover {
+    transform: scale(1.15);
+}
